@@ -1,10 +1,11 @@
-export const Items=()=>{
-    return(
-        <ul>
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>About Me</li>
-        <li>Contacts</li>
-      </ul>
-    )
-}
+import styles from "./Item.module.scss";
+export const Items = () => {
+  return (
+    <ul className={styles.menulist}>
+      <li className={styles.menuItem}>Home</li>
+      <li className={styles.menuItem}>Portfolio</li>
+      <li className={styles.menuItem}>About Me</li>
+      <li className={styles.menuItem}>Contacts</li>
+    </ul>
+  );
+};
